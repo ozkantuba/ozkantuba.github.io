@@ -1,4 +1,7 @@
-@import url('https://github.com/ozkantuba/ozkantuba.github.io/blob/master/assets/fonts/SHO-CARD.TTF');
+@font-face {
+	font-family: 'ShoCard Caps NF';
+   	src: url(https://github.com/ozkantuba/ozkantuba.github.io/blob/master/assets/fonts/SHO-CARD.TTF);
+}
 
 
 @-webkit-keyframes typing { from { width: 0; } }
