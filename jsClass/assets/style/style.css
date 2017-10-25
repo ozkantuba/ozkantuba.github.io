@@ -1,0 +1,83 @@
+
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+* { margin:0; padding:0;}
+body {
+	color: #000;
+	font-size:100%;
+	background: #FF00E4;
+}
+
+h1 {
+	color:white;
+	font-family: 'ShoCard Caps NF';
+	margin-bottom: 30px;
+	font-size: 40pt;
+	text-align: center;
+	text-transform: uppercase;
+}
+#wrapper {
+	position:relative;
+	width:100%;
+	max-width: 500px;
+	height: calc(100vh - 60px);
+	margin: 30px auto;
+	padding: 0;
+}
+
+/* -- mercury gifs-- */
+
+#mercury {
+	display:block;
+	position:absolute;
+	top:250px;
+	left:30px;
+	margin:0 auto;
+	width:90%;
+	height:90%;
+	background:url('../img/mercury.gif') no-repeat;
+	background-size:100% auto;
+	z-index:2;
+}
+
+/* -- onclick and truths box-- */
+#truths {
+
+   font-family: 'ShoCard Caps NF';
+   border-right: .1em solid black;
+   white-space: nowrap;
+   overflow: hidden;
+   -webkit-animation: typing 2s steps(21, end),
+    blink-caret .5s step-end infinite alternate;
+
+  float:center;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  font-size:20px;
+  text-align: center;
+  padding-top:20px;
+  color:#266590;
+  background:#fff;
+  border: 3px;
+  border-color: #266590 ;
+/*  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;*/
+/*  border-radius: 10px;
+*/  margin-bottom: 40px;
+  cursor:pointer;
+  
+}
+
+#truths:hover {
+	color:black;
+	background: #feeb43;
+	transform: scale(2, 2); /** default is 1, scale it to 1.5 */
+    opacity: 1;
+}
+
+::-webkit-input-placeholder { color: #438ec1; text-align: center;  }
+:-moz-placeholder { color: #438ec1; text-align: center;  }
+::-moz-placeholder { color: #438ec1; text-align: center;  }
+:-ms-input-placeholder { color: #438ec1; text-align: center;  }
