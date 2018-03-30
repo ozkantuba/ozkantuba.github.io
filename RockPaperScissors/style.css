@@ -1,0 +1,104 @@
+body {
+    font-family: Helvetica;
+    color: black;
+}
+
+/* Split the screen in half */
+.player {
+  
+  display: flex;
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 50px;
+}
+
+/* Control the left side */
+.one {
+  left: 200px;
+  height: 100%;
+  background-color: white;
+}
+
+/* Control the right side */
+.two {
+  right: 0;
+  height: 100%;
+  background-color: white;
+
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 250px;
+}
+
+.yourchoices {
+	position: absolute;
+	display: flex;
+}
+
+.yourchoices h3{ 
+	margin-top:0px;
+ }
+
+.yourchoices img {
+	position:absolute;
+	transform: rotate(180deg);
+	width: 150px;
+	opacity:0.5;
+}
+
+#rock {
+	top:100px;
+
+}
+#rock:hover {
+	opacity:1;
+}
+
+#paper {
+	top:300px;
+}
+
+#paper:hover {
+	opacity:1;
+}
+
+#scissors {
+	top:500px;
+
+}
+#scissors:hover {
+	opacity:1;
+}
+
+#result {
+	position:absolute;
+	font-size:45px;
+	color: #990000;
+	z-index:1;
+	top: 4vw;
+}
+
+#mercury {
+	position:absolute;
+	display:flex;
+	z-index:1;
+	opacity:0.9;
+	width: auto;
+	height: 50vw;
+
+}

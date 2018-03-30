@@ -1,0 +1,63 @@
+<!-- This is a digital version of a simple Rock, Scissors, Paper game between a person-player and computer. // by Tuba Ozkan
+
+Instructions:
+
+	1. Create html/css/js files in a folder - add online jquery library + css/js links to your html
+	2. Create an assets folder for images and sounds (if we have any)
+	3. Create two divs in html for two players + create another placeholder div for rock scissor and paper images, assign some onclick functions to these images. 
+	4. In Js, create an array variable includes all elements (in this case, we have 3 elements for rock, paper, scissors images)
+	5. Create a function play, Whenever we click on one of the options, js will randomly generate an option from the images array for the computer side. Use random math method. Jquery can be used to access html easier or use document element get by id.
+	6. We should define relations in between each options- paper beats rock, rock beats scissor, scissor beats paper. Use conditionals to define these relations(if/else).  
+	7. Copy this function for each image, only change the results of if/else statements depending on the game's rules.
+	8. If the player wins, show/play st fun. 
+ 
+-->
+
+<!DOCTYPE html>
+<html>
+<head> 
+<!--link style sheet -->	
+	<link rel="stylesheet" href="style.css">
+	<!--link scripts -->	
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</head>
+
+<body>
+
+<!-- placeholder for player one -->
+	<div class="player one"> 
+			<div class="centered">
+	    		<img id="p1" src="assets/images/player1.jpg" alt="player1">
+	    		<h1>YOU</h1>
+	   		</div>
+	</div>
+
+<!-- placeholder for player two -->
+	<div class="player two"> 
+		<div class="centered">
+			<img id="p2" src="assets/images/player2.jpg" alt="player2">
+			<h1>SOME GHOST</h1>
+			</div>
+	</div>
+
+<!-- placeholder for 3 options available to player -->
+	<div class="yourchoices"> 
+	<h3> ROCK, SCISSORS, PAPER. </br> WHAT IS YOUR CHOICE? </h3>
+		<img id="rock" onclick= "playRock()" src="assets/images/rock.jpg">
+		<img id="paper" onclick= "playPaper()" src="assets/images/paper.jpg">
+		<img id="scissors" onclick= "playScissors()" src="assets/images/scissors.jpg">
+
+	</div>
+
+<!-- placeholder for results -->
+		<img id="mercury">
+		<div id="result"> </div>
+
+</body>
+
+</html>
+
+
+
+ 
