@@ -1,5 +1,107 @@
 <!DOCTYPE html>
 <html>
+
+<style>
+
+/*.content {
+    background-color: yellow;    
+}*/
+
+p {
+  font-family: "Courier New";
+  font-size:20px;
+}
+
+a {
+  text-decoration:none;
+}
+
+.row {
+	position: absolute;
+	top:30%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-orient: horizontal; 
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    flex-direction: row;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;  
+    align-items: center;
+
+    /*background-color: black;*/
+}
+
+@media only screen 
+and (min-device-width : 100px) 
+and (max-device-width : 600px)  { 
+
+p {
+  font-family: "Courier New";
+  font-size:80px;
+}
+
+.row {
+	position: absolute;
+	top:2%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-orient: vertical; 
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    /*flex-direction: row;*/
+    flex-direction: column;
+	/* STYLES GO HERE */
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    justify-content: center;
+
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;  
+    align-items: center;
+
+    /*background-color: black;*/
+}
+
+}
+
+.cell {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto; 
+
+    padding: 10px;
+    margin: 10px;
+
+    background-color: white;
+    border: 2px solid black;
+    text-align: center;
+}
+img {max-width:100%;}
+
+</style>
+
+
 <head>
 <meta charset="UTF-8">
 <title>Title of the document</title>
@@ -7,12 +109,44 @@
 
 <body>
 
-<div> <a href="http://149.31.182.215:81/html/"> MASK 1 </a> </div>
+<div class="container">
+   <figure></figure>
+</div>
 
-<div> <a href="http://149.31.182.215:82/html/"> MASK 2 </a> </div>
-<div> <a href="http://149.31.182.215:83/html/"> MASK 3 </a> </div>
-<div> <a href="http://149.31.182.215:84/html/"> MASK 4 </a> </div>
+<div class="content">
+  <div class="row"> 
 
+  	<!-- Mask 1 Holder-->
+  	<a href="http://149.31.182.215:81/html/">
+	    <div class="cell">  
+	      <img src="sample.jpg"/> <p> MASK 1 </p>
+	    </div>
+    </a> 
+
+    <!-- Mask 2 Holder-->
+  	<a href="http://149.31.182.215:82/html/">
+	    <div class="cell"> 
+	      <img src="sample.jpg"/> <p> MASK 2 </p>
+	    </div>
+    </a> 
+
+    <!-- Mask 3 Holder-->
+  	<a href="http://149.31.182.215:83/html/">
+	    <div class="cell"> 
+	      <img src="sample.jpg"/> <p> MASK 3 </p>
+	    </div>
+    </a> 
+
+	<!-- Mask 4 Holder-->
+  	<a href="http://149.31.182.215:84/html/">
+	    <div class="cell"> 
+	      <img src="sample.jpg"/> <p> MASK 4 </p>
+	    </div>
+    </a> 
+
+
+  </div>
+</div>
 
 
 </body>
