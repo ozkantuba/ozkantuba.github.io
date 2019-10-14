@@ -59,16 +59,17 @@ ellipse {
 $("ellipse").click(function(){
 
   var name = this.id;
+  var id = "#" + name;
   var card = ("#" + name + "_card");
 
   var clicks = $(this).data('clicks');
 
   if (clicks) {
-    $(name).css({"rx": "4.84px", "ry": "3.75px", "opacity" : "1"});
+    $(id).css({"rx": "4.84px", "ry": "3.75px", "opacity" : "1"});
     $(card).css({"display": "none"});
   
   } else {
-    $(name).css({"rx": "30px", "ry": "30px", "opacity" : "0.5"});
+    $(id).css({"rx": "20px", "ry": "20px", "opacity" : "0.5"});
     $(card).css({"display": "block"});
   }
 
