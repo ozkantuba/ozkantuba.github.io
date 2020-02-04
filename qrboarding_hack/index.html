@@ -4,7 +4,7 @@
 <head>
 
 <!-- Load the Paper.js library -->
-//<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <!-- Define inlined PaperScript associate it with myCanvas -->
 </script>
 
@@ -14,13 +14,13 @@
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 700;
-  src: url('playfair-display-v15-latin-700.eot'); /* IE9 Compat Modes */
-  src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'),
-       url('playfair-display-v15-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('playfair-display-v15-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('playfair-display-v15-latin-700.woff') format('woff'), /* Modern Browsers */
-       url('playfair-display-v15-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('playfair-display-v15-latin-700.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
+  src: url('fonts/playfair-display-v15-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('fonts/Playfair Display Bold'), local('fonts/PlayfairDisplay-Bold'),
+       url('fonts/playfair-display-v15-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/playfair-display-v15-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/playfair-display-v15-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('fonts/playfair-display-v15-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/playfair-display-v15-latin-700.svg#PlayfairDisplay') format('svg'); /* Legacy iOS */
 }
 body {
 	background-color: #f2f4f6;
@@ -30,13 +30,16 @@ h1 {
 	font-family: 'Playfair Display';
 	color: #181c47;
 	margin-left:40px;
-	font-size:24px;
-
+	font-size:2vw;
 }
 
 svg{
-	margin-top:-120px;
+	margin-top:-6vw;
+  margin-left:1vw;
+}
 
+ellipse {
+  cursor: pointer;
 }
 
 </style>
@@ -51,107 +54,29 @@ svg{
 
 </body>
 
-
 <script> 
-//ANDRE
-$("#andre").click(function(){
+
+$("ellipse").click(function(){
+
+  var name = this.id;
+  var id = "#" + name;
+  var card = ("#" + name + "_card");
+
   var clicks = $(this).data('clicks');
+
   if (clicks) {
-    $("#andre").css({"rx": "4.84px", "ry": "3.75px", "opacity" : "1"});
-    $("#andre_card").css({"display": "none"});
-  
-     // odd clicks
-  } else {
-    $("#andre").css({"rx": "10px", "ry": "10px", "opacity" : "0.5"});
-    $("#andre_card").css({"display": "block"});
-     // even clicks
-  }
-  $(this).data("clicks", !clicks);
-});
-
-//LAUREN
-$("#lauren").click(function(){
-  var clicks = $(this).data('clicks');
-  if (clicks) {
-    $("#lauren").css({"rx": "4.84px", "ry": "3.75px", "opacity" : "1"});
-    $("#lauren_card").css({"display": "none"});
-
-  } else {
-    $("#lauren").css({"rx": "10px", "ry": "10px", "opacity" : "0.5"});
-    $("#lauren_card").css({"display": "block"});
-
-  }
-  $(this).data("clicks", !clicks);
-});
-
-
-//YAN
-$("#yan").click(function(){
-  var clicks = $(this).data('clicks');
-  if (clicks) {
-    $("#yan").css({"rx": "4.84px", "ry": "3.75px", "opacity" : "1"});
-    $("#yan_card").css({"display": "none"});
+    $(id).css({"rx": "4.84px", "ry": "3.75px", "opacity" : "1"});
+    $(card).css({"display": "none"});
   
   } else {
-    $("#yan").css({"rx": "10px", "ry": "10px", "opacity" : "0.5"});
-    $("#yan_card").css({"display": "block"});
-
-  }
-  $(this).data("clicks", !clicks);
-});
-
-//REBECCA
-$("#rebecca").click(function(){
-  var clicks = $(this).data('clicks');
-  if (clicks) {
-    $("#rebecca").css({"rx": "4.84px", "ry": "3.75px", "opacity" : "1"});
-    $("#rebecca_card").css({"display": "none"});
-  
-  } else {
-    $("#rebecca").css({"rx": "10px", "ry": "10px", "opacity" : "0.5"});
-    $("#rebecca_card").css({"display": "block"});
+    $(id).css({"rx": "20px", "ry": "20px", "opacity" : "0.5"});
+    $(card).css({"display": "block"});
   }
 
   $(this).data("clicks", !clicks);
+
 });
-
-//JASON
-$("#jason").click(function(){
-  var clicks = $(this).data('clicks');
-  console.log("jason");
-  if (clicks) {
-    $("#jason").css({"rx": "4.84px", "ry": "3.75px", "opacity" : "1"});
-    $("#jason_card").css({"display": "none"});
-     // odd clicks
-  } else {
-    $("#jason").css({"rx": "10px", "ry": "10px", "opacity" : "0.5"});
-    $("#jason_card").css({"display": "block"});
-     // even clicks
-  }
-  $(this).data("clicks", !clicks);
-});
-
-
-//NORRIS
-$("#norris").click(function(){
-  var clicks = $(this).data('clicks');
-  if (clicks) {
-    $("#norris").css({"rx": "4.84px", "ry": "3.75px", "opacity" : "1"});
-    $("#norris_card").css({"display": "none"});
-
-     // odd clicks
-  } else {
-    $("#norris").css({"rx": "10px", "ry": "10px", "opacity" : "0.5"});
-    $("#norris_card").css({"display": "block"});
-     // even clicks
-
-  }
-  $(this).data("clicks", !clicks);
-});
-
-
-
-
 
 </script>
+
 </html>
