@@ -15,10 +15,11 @@ form {
 .container {
   display: block;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 16px;
+  padding-top: 2px;
+  padding-left: 32px;
+  margin-bottom: 14px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 14px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -128,7 +129,7 @@ form {
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 18px;
   color: #818181;
   display: block;
 }
