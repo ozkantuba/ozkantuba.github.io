@@ -67,26 +67,28 @@
 			    $(this).click(function(){
 
 			    $ (".peoplelist").css({"stroke": "#2E68B0", "stroke-width":"0.5", "fill-opacity": "0.8"});
-				
+
 			    console.log("this clicked");
 			    var name = this.id;
 			    var personName = '#' + name;
-			    console.log(personName);
-			
+			    var personCard = '#' + name + 'card';
+
+			    $(personCard).css({"display": "none"});
 			    clicks = $(this).data('clicks');
 
 				if(clicks){
 
 					$(personName).css({"stroke": "#2E68B0", "stroke-width":"0.5", "fill-opacity": "0.8"});
+					$(personCard).css({"display": "none"});
 				
 				} else {
 
 					$(personName).css({"stroke": "#9CC2F2", "stroke-opacity": "0.8", "stroke-width":"16", "fill-opacity": "1"});
-
+					$(personCard).css({"display": "block"});
+					console.log(personCard);
 				}
 
 				$(this).data("clicks", !clicks);
-
 
 			    });
 				

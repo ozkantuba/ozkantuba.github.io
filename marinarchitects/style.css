@@ -188,9 +188,31 @@ form {
   background: #555; 
 }
 
+.cards{
+  left: 260px;
+  font-size:12px;
+  line-height: 32px;
+ 
+}
 
+.image-cropper {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
 
-/*vartical side bar*/
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%; //centers the image
+  height: 100%;
+  width: auto;
+  scale: 0.5;
+}
+
+/*vertical side bar*/
 #verticalnav {
   list-style-type: none;
   margin: 0;
