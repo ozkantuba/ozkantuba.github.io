@@ -14,16 +14,24 @@ form {
   padding-top:16px;
 }
 
+#peopletitle{
+  text-align: center;
+  font-size:14px;
+  letter-spacing: 1px; 
+  padding-top:24px;
+
+}
+
 #socialdistancing{
   padding-left:16px;
   font-size:14px;
-  letter-spacing: 1.2px; 
+  letter-spacing: 1px; 
   padding-top:24px;
 
 }
 
 #formcontainer {
-  margin-left:60px;
+  margin-left:50px;
 
 }
 
@@ -188,28 +196,30 @@ form {
   background: #555; 
 }
 
-.cards{
+.card{
   left: 260px;
   font-size:12px;
   line-height: 32px;
- 
+  padding-left:16px;
+  padding-right:16px;
+  margin-top:32px;
+
 }
 
 .image-cropper {
-    width: 180px;
-    height: 180px;
+    width: 175px;
+    height: 175px;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
+    margin-bottom:8px;
 }
 
 .profile-pic {
   display: inline;
-  margin: 0 auto;
-  margin-left: -25%; //centers the image
-  height: 100%;
-  width: auto;
-  scale: 0.5;
+  width:175px;
+  height:auto;
+
 }
 
 /*vertical side bar*/
@@ -252,7 +262,16 @@ form {
   height: 100%;
   top:0;
   z-index:-1;
-
-
-
 }
+
+#name{
+  text-align: center;
+  font-size:16px; 
+  padding-bottom:24px;
+}
+
+/*g.peoplelistlist:hover{
+  fill: #408CDD;
+  scale: 1.2;
+  stroke-width: 3;
+}*/
