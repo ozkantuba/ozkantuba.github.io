@@ -1,12 +1,7 @@
 body {
   
     font-family: 'Helvetica', sans-serif;
-    /*font-family: 'Roboto Mono', monospace;*/
-
     color: #000;
-/*    font-size: 0.8rem;*/
-/*    line-height: 1.6;*/
-    /*background-color: #FAFAFA;*/
     margin: 0;
    
   }
@@ -233,9 +228,6 @@ form {
   height: 100%;
   overflow: auto;
   border-right: 1px solid #A0A0A0;
-/*  border-right-color: solid black;
-  border-right-style*/
-
 }
 
 #navitem a {
@@ -245,16 +237,15 @@ form {
   text-decoration: none;
 }
 
-#navitem a.active {
-  background-color: #eeeeee;
-  color: white;
-}
-
 #navitem a:hover:not(.active) {
   background-color: #555;
   color: white;
 }
 
+#navitem a.active {
+  background-color: #eeeeee;
+  color: white;
+}
 
 #logo{
   position:fixed;
@@ -270,8 +261,3 @@ form {
   padding-bottom:24px;
 }
 
-/*g.peoplelistlist:hover{
-  fill: #408CDD;
-  scale: 1.2;
-  stroke-width: 3;
-}*/
