@@ -1,0 +1,236 @@
+var peopleCard = {
+
+    andre: {
+        Name: "Andrea Acuna",
+        Group: "Blue",
+        Email: "aacuna@marinarchitects.com",
+        Extention: "126",
+        photo_url: "img/andrea.jpg"
+
+    },
+
+    aston: {
+        Name: "Aston Sydney",
+        Group: "Blue",
+        Email: "asydney@marinarchitects.com",
+        Extention: "115",
+        photo_url: "img/aston.jpg"
+    },
+
+    brooke: {
+        Name: "Brooke McGowan",
+        Group: "Blue",
+        Email: "bmcgowan@marinarchitects.com",
+        Extention: "119 / 148",
+        photo_url: "img/brooke.jpg"
+    },
+
+    christina: {
+
+        Name: "Christina Mohan ",
+        Group: "Blue",
+        Email: "cmohan@marinarchitects.com",
+        Extention: "106 / 154",
+        photo_url: "img/christina.jpg"
+    },
+
+    denny: {
+
+        Name: "Denny Moran",
+        Group: "Blue",
+        Email: "dmoran@marinarchitects.com",
+        Extention: "117",
+        photo_url: "img/denny.jpg"
+    },
+
+    dong: {
+
+        Name: "Dong Shin",
+        Group: "Blue",
+        Email: "dshin@marinarchitects.com",
+        Extention: "122",
+        photo_url: "img/dong.jpg"
+    },
+
+    elif: {
+
+        Name: "Elif Unsal",
+        Group: "Blue",
+        Email: "eunsal@marinarchitects.com",
+        Extention: "123 / 145",
+        photo_url: "img/elif.jpg"
+    },
+
+    emre: {
+
+        Name: "Emre Ozdemir",
+        Group: "Blue",
+        Email: "eozdemir@marinarchitects.com",
+        Extention: "147",
+        photo_url: "img/emre.jpg"
+    },
+
+    enmanuel: {
+        Name: "Enmanuel Espinal",
+        Group: "Blue",
+        Email: "eespinal@marinarchitects.com",
+        Extention: "118",
+        photo_url: "img/enmanuel.jpg"
+    },
+
+    fatih:{
+        Name: "Fatih Ergun",
+        Group: "Blue",
+        Email: "fergun@marinarchitects.com",
+        Extention: "133 / 146",
+        photo_url: "img/fatih.jpg",
+    },
+
+    german: {
+        Name: "German Ramirez",
+        Group: "Blue",
+        Email: "gramirez@marinarchitects.com",
+        Extention: "114 / 111",
+        photo_url: "img/german.jpg"
+
+    },
+
+    juan: {
+        Name: "Juan Fawcett",
+        Group: "Blue",
+        Email: "jfawcett@marinarchitects.com",
+        Extention: "130",
+        photo_url: "img/juan.jpg"
+    },
+
+    kerem:{
+        Name: "Kerem Marin",
+        Group: "Blue",
+        Email: "kmarin@marinarchitects.com ",
+        Extention: "152",
+        photo_url: "img/kerem.jpg"
+    },
+
+    kathleen:{
+        Name: "Kathleen Riopel",
+        Group: "Blue",
+        Email: "kriopel@marinarchitects.com",
+        Extention: "120",
+        photo_url: "img/kathleen.jpg"
+    },
+
+    lauren: {
+        Name: "Lauren Carbonaro",
+        Group: "Blue",
+        Email: "lcarbonaro@marinarchitects.com",
+        Extention: "135",
+        photo_url: "img/lauren.jpg"
+    },
+
+    leo: {
+        Name: "Leo Diaz-Montiel",
+        Group: "Blue",
+        Email: "ldiaz@marinArchitects.com",
+        Extention: "110",
+        photo_url: "img/leo.jpg"
+    },
+
+    leydi: {
+        Name: "Leydi Nunez",
+        Group: "Blue",
+        Email: "lnunez@marinArchitects.com",
+        Extention: "144",
+        photo_url: "img/leydi.jpg"
+    },
+
+    luis: {
+        Name: "Luis Mejia ",
+        Group: "Blue",
+        Email: "lmejia@marinarchitects.com",
+        Extention: "129",
+        photo_url: "img/luis.jpg"
+    },
+
+    martha: {
+        Name: "Martha Romero",
+        Group: "Blue",
+        Email: "mromero@marinarchitects.com",
+        Extention: "143 /134",
+        photo_url: "img/martha.jpg"
+    },
+
+    ming: {
+        Name: "Ming Chuang ",
+        Group: "Blue",
+        Email: "mchuang@marinarchitects.com",
+        Extention: "112",
+        photo_url: "img/ming.jpg"
+    },
+
+    minkuk: {
+        Name: "Minkuk Kim",
+        Group: "Blue",
+        Email: "mkim@marinarchitects.com",
+        Extention: "109",
+        photo_url: "img/minkuk.jpg"
+    },
+
+    mohammed: {
+        Name: "Mohammed Alamin",
+        Group: "Blue",
+        Email: "malamin@marinarchitects.com",
+        Extention: "134",
+        photo_url: "img/mohammed.jpg"
+    },
+
+    neka: {
+        Name: "Neka Highland",
+        Group: "Blue",
+        Email: "nhighland@marinarchitects.com",
+        Extention: "105",
+        photo_url: "img/neka.jpg"
+    },
+
+    shelly: {
+        Name: "Shelly Mohan",
+        Group: "Blue",
+        Email: "smohan@marinarchitects.com",
+        Extention: "128",
+        photo_url: "img/shelly.jpg"
+    },
+
+    walter: {
+        Name: "Walter Marin",
+        Group: "Blue",
+        Email: "wmarin@marinArchitects.com",
+        Extention: "108",
+        photo_url: "img/walter.jpg"
+    },
+
+    conferencerooms: {
+        Name: "Conference Room S",
+        Extention: "101",
+        photo_url: "img/conferencerooms.jpg"
+
+    },
+
+    conferenceroomm: {
+        Name: "Conference Room M",
+        Extention: "102"
+        photo_url: "img/conferenceroomm.jpg"
+
+    },
+
+    conferencerooml: {
+        Name: "Conference Room L",
+        Extention: "100"
+        photo_url: "img/conferencerooml.jpg"
+    }
+
+}
+
+
+
+
+
+
